@@ -1,5 +1,7 @@
 # hexo-generator-redirect
 
+![Publish on NPM](https://github.com/sergeyzwezdin/hexo-generator-redirect/workflows/Publish%20on%20NPM/badge.svg?branch=master)
+
 Hexo plugin that generates additional redirect pages
 
 ## Requirements
@@ -21,7 +23,7 @@ layout: post
 title: Page
 redirect_from:
 - /old-url1
-- /old-url1
+- /old-url2
 ```
 
 Create layout template for the redirect page. Create `redirect.ejs` in `layout` folder of your theme.
