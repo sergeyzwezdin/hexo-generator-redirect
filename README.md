@@ -1,6 +1,6 @@
 # hexo-generator-redirect
 
-![Publish on NPM](https://github.com/sergeyzwezdin/hexo-generator-redirect/workflows/Publish%20on%20NPM/badge.svg?branch=master)
+![Publish on NPM](https://github.com/sergeyzwezdin/hexo-generator-redirect/workflows/Publish%20on%20NPM/badge.svg?branch=master) ![](https://img.shields.io/npm/v/hexo-generator-redirect)
 
 [Hexo](https://hexo.io/) plugin that generates additional redirect pages
 
