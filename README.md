@@ -5,7 +5,7 @@
 Hexo plugin that generates additional redirect pages
 
 ## Requirements
-- hexo: 4.x
+- Hexo: 4.x
 - Node 12+
 
 ## Installation
