@@ -1,0 +1,1 @@
+hexo.extend.generator.register('redirect', require('./lib/generator'));

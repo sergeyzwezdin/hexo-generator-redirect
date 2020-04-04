@@ -1,0 +1,28 @@
+{
+  "name": "hexo-generator-redirect",
+  "version": "0.1.0",
+  "description": "Hexo plugin that generates additional redirect pages",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyzwezdin/hexo-generator-redirect.git"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "keywords": [
+    "hexo",
+    "generator",
+    "redirect"
+  ],
+  "author": "Sergey Zwezdin <sergey@zwezdin.com> (https://zwezdin.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeyzwezdin/hexo-generator-redirect/issues"
+  },
+  "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
+  "devDependencies": {
+    "hexo": "^4.2.0"
+  }
+}
