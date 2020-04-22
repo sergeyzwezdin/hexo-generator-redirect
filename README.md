@@ -4,7 +4,7 @@
 
 * Migrate to new URLs **without the pain**.
 * **Easy to install** and use.
-* **Custom templates** for redirect page.
+* **Custom templates** for the redirect page.
 
 ## Requirements
 - Hexo: 4.x
@@ -24,14 +24,14 @@ redirect_from:
 - /old-url1
 - /old-url2
 ```
-3. Create layout template for the redirect page (for more details see below).
-4. The the website 🤝.
+3. Create a layout template for the redirect page (for more details see below).
+4. Build the website 🤝.
 
 ## Creating the template
 
-Create `redirect.ejs` in `layout` folder of your theme.
+Create `redirect.ejs` in the `layout` folder of your theme.
 
-You can use `post` variable in the template. To access the target page information, use `page.target.path`.
+You can use the `post` variable in the template. To access the target page information, use `page.target.path`.
 
 Here is an example of the redirect page layout (`redirect.ejs`):
 
