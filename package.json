@@ -22,7 +22,7 @@
     "url": "https://github.com/sergeyzwezdin/hexo-generator-redirect/issues"
   },
   "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
-  "devDependencies": {
+  "peerDependencies": {
     "hexo": "^4.2.0"
   }
 }
