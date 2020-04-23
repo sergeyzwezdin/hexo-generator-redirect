@@ -6,6 +6,10 @@
 * **Easy to install** and use.
 * **Custom templates** for the redirect page.
 
+## How it works
+
+The plugin generates additional HTML page for "outdated" URLs. These pages will contain information on where the page was moved to.
+
 ## Requirements
 - Hexo: 4.x
 - Node 12+
