@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
   "peerDependencies": {
-    "hexo": "^4.2.0"
+    "hexo": "^4.2.0 || ^5.2.0"
   }
 }
