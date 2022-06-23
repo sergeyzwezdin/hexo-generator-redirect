@@ -9,3 +9,4 @@ hexo.config.redirect = Object.assign(
 if (hexo.config.redirect.enable) {
     hexo.extend.generator.register('redirect', require('./lib/generator')(hexo));
 }
+
