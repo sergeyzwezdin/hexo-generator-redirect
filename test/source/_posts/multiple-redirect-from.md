@@ -1,5 +1,5 @@
 ---
-title: Multiple Redirect From
+title: Multiple Redirect From API
 date: 2022-06-23 19:07:30
 tags: []
 redirect_from:
