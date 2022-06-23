@@ -37,6 +37,7 @@
     },
     "dependencies": {
         "chalk": "^4.1.2",
-        "hexo-util": "^2.6.1"
+        "hexo-util": "^2.6.1",
+        "upath": "^2.0.1"
     }
 }
