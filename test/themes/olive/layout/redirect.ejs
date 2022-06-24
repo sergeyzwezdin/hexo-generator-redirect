@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- page.title %></title>
+    <link rel="canonical" href="<%- page.redirect_to %> " />
+  </head>
+  <body>
+    <% const newUrl = full_url_for(page.target.path) %>
+
+    <h1>Page address was changed</h1>
+    <p>The new page address is <a href="<%= newUrl %>"><%= newUrl %></a></p>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        //document.location.href = '<%= newUrl %>';
+        location.replace('<%= newUrl %>');
+      }, 5000);
+    </script>
+  </body>
+</html>
