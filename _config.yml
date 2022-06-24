@@ -1,0 +1,4 @@
+# Jekyll GitHub Pages Configuration
+
+exclude:
+  - test
