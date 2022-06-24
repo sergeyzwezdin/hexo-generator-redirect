@@ -59,3 +59,4 @@ Here is an example of the redirect page layout (`redirect.ejs`):
   setTimeout(function(){ document.location.href = '<%= newUrl %>'; }, 5000);
 </script>
 ```
+[VIEW ALL EXAMPLE LAYOUTS](https://github.com/dimaslanjaka/hexo-generator-redirect/tree/master/template)
