@@ -1,12 +1,12 @@
+/* eslint-disable no-undef */
 hexo.config.redirect = Object.assign(
-    {
-        enable: true,
-        layout: 'redirect'
-    },
-    hexo.config.redirect
+  {
+    enable: true,
+    layout: 'redirect'
+  },
+  hexo.config.redirect
 );
 
 if (hexo.config.redirect.enable) {
-    hexo.extend.generator.register('redirect', require('./lib/generator')(hexo));
+  hexo.extend.generator.register('redirect', require('./lib/generator')(hexo));
 }
-
