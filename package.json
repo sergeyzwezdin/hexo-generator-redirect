@@ -30,24 +30,25 @@
     },
     "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
     "scripts": {
-        "test": "cd test && npm install && hexo generate --dev"
+        "test": "cd test && npm install && hexo generate --dev",
+        "update": "npx npm-check-updates -u -x hexo,chalk"
     },
     "peerDependencies": {
         "hexo": ">= 4.2.0"
     },
     "devDependencies": {
-        "@types/hexo": "^3.8.7",
-        "@types/hexo-util": "^0.6.4",
-        "@typescript-eslint/eslint-plugin": "^5.29.0",
-        "@typescript-eslint/parser": "^5.29.0",
-        "eslint": "^8.18.0",
+        "@types/hexo": "^3.8.8",
+        "@types/hexo-util": "^0.6.5",
+        "@typescript-eslint/eslint-plugin": "^5.40.1",
+        "@typescript-eslint/parser": "^5.40.1",
+        "eslint": "^8.25.0",
         "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "prettier": "^2.7.1"
     },
     "dependencies": {
         "chalk": "^4.1.2",
-        "hexo-util": "^2.6.1",
+        "hexo-util": "^2.7.0",
         "upath": "^2.0.1"
     }
 }
