@@ -10,7 +10,8 @@
     "files": [
         "index.js",
         "lib/",
-        "postinstall.js"
+        "postinstall.js",
+        "template"
     ],
     "keywords": [
         "hexo",
