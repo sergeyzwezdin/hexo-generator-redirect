@@ -1,6 +1,6 @@
 {
     "name": "hexo-generator-redirect",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Hexo plugin that generates additional redirect pages",
     "main": "index.js",
     "repository": {
