@@ -31,6 +31,7 @@
     "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
     "scripts": {
         "test": "cd test && npm install && hexo generate --dev",
+        "update:postinstall": "curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/postinstall.js > postinstall.js",
         "update": "npx npm-check-updates -u -x hexo,chalk"
     },
     "peerDependencies": {
