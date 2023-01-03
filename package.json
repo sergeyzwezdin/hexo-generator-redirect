@@ -11,7 +11,8 @@
         "index.js",
         "lib/",
         "postinstall.js",
-        "template"
+        "template",
+        "!lib/*.txt"
     ],
     "keywords": [
         "hexo",
@@ -43,6 +44,7 @@
         "hexo": ">= 4.2.0"
     },
     "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
         "@types/hexo": "https://github.com/dimaslanjaka/nodejs-package-types/tarball/hexo",
         "@types/hexo-util": "https://github.com/dimaslanjaka/nodejs-package-types/raw/main/hexo-util/release/types-hexo-util.tgz",
         "@typescript-eslint/eslint-plugin": "^5.48.0",
@@ -57,6 +59,7 @@
     },
     "dependencies": {
         "ansi-colors": "^4.1.3",
+        "fs-extra": "^11.1.0",
         "hexo-util": "^3.0.1",
         "upath": "^2.0.1"
     }

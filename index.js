@@ -1,6 +1,7 @@
 /* global hexo */
 
 const generator = require('./lib/generator');
+const { configure } = require('./lib/generator');
 
 if (typeof hexo !== 'undefined') {
   hexo.config.redirect = Object.assign(
@@ -12,6 +13,7 @@ if (typeof hexo !== 'undefined') {
   );
 
   if (hexo.config.redirect.enable) {
+    configure(hexo);
     hexo.extend.generator.register('hexo-generator-redirect', generator(hexo));
   }
 } else {

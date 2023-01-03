@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="canonical" href="{{ page.redirect_to }}" />
+    <meta http-equiv="refresh" content="0; url='{{ page.redirect_to }}'">
   </head>
   {% set newUrl = full_url_for(page.target.path) %}
   <body>
