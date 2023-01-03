@@ -15,5 +15,5 @@ if (typeof hexo !== 'undefined') {
     hexo.extend.generator.register('hexo-generator-redirect', generator(hexo));
   }
 } else {
-  console.log('hexo-generator-redirect only for hexo plugin');
+  console.error('hexo-generator-redirect only for hexo plugin');
 }

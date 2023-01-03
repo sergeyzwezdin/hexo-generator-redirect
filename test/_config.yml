@@ -105,5 +105,6 @@ theme: next
 deploy:
   type: ''
 
+# hexo-config-redirect
 redirect:
   enable: true
