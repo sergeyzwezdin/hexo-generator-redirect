@@ -8,7 +8,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "npm run postinstall && hexo server",
-    "postinstall": "node postinstall.js",
+    "post-install": "node postinstall.js",
     "update": "curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/postinstall.js > postinstall.js",
     "test": "npm run build"
   },

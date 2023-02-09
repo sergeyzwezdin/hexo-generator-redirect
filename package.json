@@ -36,7 +36,7 @@
         "test": "run-s test:**",
         "pretest": "npm run build",
         "test:generate": "cd test && npm install && hexo generate --dev",
-        "postinstall": "node postinstall.js",
+        "post-install": "node postinstall.js",
         "update": "curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/.prettierrc.json > prettierrc.json && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/postinstall.js > postinstall.js && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/packer.js > packer.js && npx npm-check-updates -u && npm install",
         "build": "node packer.js"
     },
