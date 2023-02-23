@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "yarn up hexo-generator-redirect@./packages/hexo-generator-redirect && hexo clean && hexo s --dev --debug",
+      "command": "yarn up hexo-generator-redirect@./packages/hexo-generator-redirect && hexo clean && hexo s --dev",
       "name": "start server",
       "request": "launch",
       "type": "node-terminal",
