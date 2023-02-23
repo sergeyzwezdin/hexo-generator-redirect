@@ -7,11 +7,8 @@ test();
 
 async function test() {
   const testFolder = path.join(__dirname, 'test');
-  const generatedTemplate = path.join(
-    testFolder,
-    'themes/next/layout/hexo-generator-redirect.njk'
-  );
-  console.log('template exist', fs.existsSync(generatedTemplate));
+  const generatedTemplate = path.join(testFolder, 'themes', hexo.config.theme, 'layout/hexo-generator-redirect.njk');
+  hexo.log.debug('template exist', fs.existsSync(generatedTemplate));
   await spawnAsync('npm', ['run', 'build'], { cwd: __dirname });
   await spawnAsync('npm', ['install'], { cwd: testFolder });
   const hexo = new Hexo(testFolder);

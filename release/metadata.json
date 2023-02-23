@@ -10,20 +10,20 @@
   },
   "/release/hexo-generator-redirect.tgz": {
     "integrity": {
-      "sha1": "d433fb9c291a038a11ce3183581e7113fe3119f5",
-      "sha256": "o95zNyWuncma/EiAUm6zDRcvfVLzkf79SmSeIQ2PSYg=",
-      "md5": "412fd6ccd14d8c4884e5b1e39ff485b6",
-      "sha512": "XhFbBEC39irKSPhxtSpxrHXoAIXvqqVKfyPeQP36h0/LryrccLevDVoj8rIcO6xVEwvdW8wYgVagII2JDBlD0A=="
+      "sha1": "1bf03ae489d2c3bdf0afdb42eea656600f7f614d",
+      "sha256": "55Bgw/5I6g7bV6hG7Xa49BGKgh+l7nF80NfzDLZJ+No=",
+      "md5": "6d24e70b7a4e1e04a57203970342d559",
+      "sha512": "tlC2zbDndzwIWtqNPPoGQpisN0NWAGQ0BZNyVaJde1+8yX75NFQseqsfmBICGKXRN/iID0xg8HBOjbpkYcLMwA=="
     },
-    "size": "9.84 KB"
+    "size": "9.92 KB"
   },
   "/release/hexo-generator-redirect-1.4.2.tgz": {
     "integrity": {
-      "sha1": "d433fb9c291a038a11ce3183581e7113fe3119f5",
-      "sha256": "o95zNyWuncma/EiAUm6zDRcvfVLzkf79SmSeIQ2PSYg=",
-      "md5": "412fd6ccd14d8c4884e5b1e39ff485b6",
-      "sha512": "XhFbBEC39irKSPhxtSpxrHXoAIXvqqVKfyPeQP36h0/LryrccLevDVoj8rIcO6xVEwvdW8wYgVagII2JDBlD0A=="
+      "sha1": "1bf03ae489d2c3bdf0afdb42eea656600f7f614d",
+      "sha256": "55Bgw/5I6g7bV6hG7Xa49BGKgh+l7nF80NfzDLZJ+No=",
+      "md5": "6d24e70b7a4e1e04a57203970342d559",
+      "sha512": "tlC2zbDndzwIWtqNPPoGQpisN0NWAGQ0BZNyVaJde1+8yX75NFQseqsfmBICGKXRN/iID0xg8HBOjbpkYcLMwA=="
     },
-    "size": "9.84 KB"
+    "size": "9.92 KB"
   }
 }

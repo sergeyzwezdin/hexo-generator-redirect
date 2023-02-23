@@ -11,7 +11,7 @@
         "index.js",
         "lib/",
         "postinstall.js",
-        "template",
+        "template/",
         "!lib/*.txt"
     ],
     "keywords": [
