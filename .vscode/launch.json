@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "yarn install && hexo clean && hexo s --dev",
+      "command": "yarn up hexo-generator-redirect@./packages/hexo-generator-redirect && hexo clean && hexo s --dev --debug",
       "name": "start server",
       "request": "launch",
       "type": "node-terminal",
@@ -15,7 +15,7 @@
       "cwd": "${workspaceFolder}/../.."
     },
     {
-      "command": "yarn install && hexo clean && hexo --debug --dev",
+      "command": "yarn up hexo-generator-redirect@./packages/hexo-generator-redirect && hexo clean && hexo --debug --dev",
       "name": "debug",
       "request": "launch",
       "type": "node-terminal",
