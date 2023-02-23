@@ -8,7 +8,7 @@
     <link rel="canonical" href="{{ page.redirect_to }}" />
     <meta http-equiv="refresh" content="0; url='{{ page.redirect_to }}'">
   </head>
-  {% set newUrl = full_url_for(page.target.path) %}
+  {% set newUrl = typeof page !== 'undefined' && typeof page.target !== 'undefined' && page.target.path ? full_url_for(page.target.path) : typeof page.redirect_to === 'string' ? full_url_for(page.redirect_to) : null %}
   <body>
     <h1>{{ page.title }} Page address was changed</h1>
     <p>
