@@ -1,6 +1,6 @@
 {
     "name": "hexo-generator-redirect",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Hexo plugin that generates additional redirect pages",
     "main": "index.js",
     "repository": {
@@ -38,7 +38,7 @@
         "test:generate": "cd test && npm install && hexo generate --dev",
         "post-install": "node postinstall.js",
         "update": "curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/.prettierrc.json > prettierrc.json && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/postinstall.js > postinstall.js && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/packer.js > packer.js && npx npm-check-updates -u",
-        "build": "node packer.js"
+        "build": "node packer.js --yarn"
     },
     "peerDependencies": {
         "hexo": ">= 4.2.0"
