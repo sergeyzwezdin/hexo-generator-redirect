@@ -51,7 +51,6 @@
     },
     "devDependencies": {
         "@types/fs-extra": "^11.0.1",
-        "@types/hexo": "https://github.com/dimaslanjaka/nodejs-package-types/tarball/hexo",
         "@typescript-eslint/eslint-plugin": "^5.54.1",
         "@typescript-eslint/parser": "^5.54.1",
         "cross-spawn": "https://github.com/dimaslanjaka/node-cross-spawn/tarball/private",
