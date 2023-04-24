@@ -16,11 +16,21 @@ The plugin generates additional HTML page for "outdated" URLs. These pages will 
 
 ## Usage
 
-1. Install the plugin using npm:
+- Install the plugin using npm:
+
 ```bash
 $ npm install hexo-generator-redirect --save-dev
 ```
-2. Add `redirect_from` key into frontmatter of the page:
+
+- Add `redirect` key into `_config.yml`
+
+```yaml
+redirect:
+  enable: true
+  # layout: redirect.ejs # or leave empty to use default template
+```
+
+- Add `redirect_from` key into frontmatter of the page:
 ```yaml
 layout: post
 title: Page
@@ -28,8 +38,8 @@ redirect_from:
 - /old-url1
 - /old-url2
 ```
-3. Create a layout template for the redirect page (for more details see below).
-4. Build the website 🤝.
+- Create a layout template for the redirect page (for more details see below).
+- Build the website 🤝.
 
 ## Creating the template
 
@@ -49,3 +59,4 @@ Here is an example of the redirect page layout (`redirect.ejs`):
   setTimeout(function(){ document.location.href = '<%= newUrl %>'; }, 5000);
 </script>
 ```
+[VIEW ALL EXAMPLE LAYOUTS](https://github.com/dimaslanjaka/hexo-generator-redirect/tree/master/template)

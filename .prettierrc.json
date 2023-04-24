@@ -1,16 +1,45 @@
 {
-    "printWidth": 140,
-    "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "arrowParens": "always",
-    "filepath": "",
-    "requirePragma": false,
-    "insertPragma": false,
-    "proseWrap": "preserve",
-    "endOfLine": "crlf"
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "endOfLine": "lf",
+  "quoteProps": "as-needed",
+  "overrides": [
+    {
+      "excludeFiles": [
+        "*.min.js",
+        "*.min.cjs",
+        "*.min.css",
+        "*.min.html",
+        "*.min.scss"
+      ],
+      "files": [
+        "*.js",
+        "*.css",
+        "*.sass",
+        "*.html",
+        "*.md",
+        "*.ts"
+      ],
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": [
+        "*.ejs",
+        "*.njk",
+        "*.html"
+      ],
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }

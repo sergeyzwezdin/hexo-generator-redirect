@@ -1,0 +1,114 @@
+# Header
+menu:
+  Home: /
+Archives: /archives
+rss: /atom.xml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+
+headerpic: "/img/logo.jpg"
+
+# 导航栏上的顶部logo 请自行替换需要显示的logo图片
+
+#  顶部导航栏的「个人介绍」界面设置，数组中第一项为显示的文字，第二项为跳转的相对路径  
+
+aboutme : ["关于","/about"]
+
+# 是否在导航栏上显示订阅博客更新功能，如果设置的话，则请填入相应的提示文本，如“订阅我”，否则请置空本项目
+
+headerfeed: "订阅"
+
+# 夜间模式设置，如果想要设置夜间模式，则置为true，否则false或不填置空
+# 推荐设置夜间模式，这也是本主题一个特色
+lightmode: true
+
+
+
+# theme-color 配置此选项后，使用安卓Chrome系浏览器浏览本站时，将使状态栏主题颜色发生改变
+# A2HS  Add to Homescreen  添加到主屏幕 so cool
+A2HS: true
+theme_color: true
+
+
+widgets:
+- category
+- archive
+
+# 显示左侧需要展示的目录，建议使用三到五个目录 ，如果不设置的话当然也没有问题
+
+category: 
+- 前端
+- 大学
+- 生活
+
+
+# 右侧边栏的友情链接名称 
+
+friendsCall: 那些小伙伴们 
+
+# 建议填入几个friens，否则主题会很丑。
+
+friends:
+  - 奥巴马的博客: http://localhost:4000/
+  - 卡卡的美丽传说: http://localhost:4000/
+  - 本泽马的博客: http://localhost:4000/
+  - 吉格斯的博客: http://localhost:4000/
+  - 习大大大不同: http://localhost:4000/
+  - 托蒂的博客: http://localhost:4000/
+
+
+
+
+# 右侧边栏网站slogan自定义
+
+slogan: "我们在自己的世界里独自狂欢"
+
+# 网站favicon 自定义
+favicon: "/favicon.png"
+
+# 右侧分享栏目里面的必要信息
+
+twitter: 'zhangolve'
+github: 'zhangolve'
+weixin: 'http://7ktu2f.com1.z0.glb.clouddn.com/wechatopen.jpg'
+email: 'zhangolve@gmail.com'
+
+# disqus ID，不要搞错了。
+# disqus ID ，如果不设置的话，则为无评论状态
+# 如果不需要使用disqus，请也尽量不要删除这个字段。留空即可
+
+disqus: 
+
+
+# 在引号内填入你的谷歌分析id。
+google_analytics: ''
+
+#在文章的展示页是否显示相对日期
+date: 'relative'
+
+
+
+
+# 是否开启版权说明，true则默认在每篇文章的最后添加版权声明，如果想指定某一篇文章的版权，
+#可以在文章结尾处添加---nocopyriht ，详见实例文章sample.md
+copyright: true 
+
+
+# 如果已经开启了打赏功能，则在alipay的设置中添加你的图片位置或云图片链接。
+reward: true
+alipay: /img/alipay.jpg
+
+
+# ie10-的不兼容性提示
+
+iewarn: true 
+
+
+# 标明博客的起始时间，对我们这种已经几年的博客，还是很有必要的。
+
+
+since: 2014

@@ -1,28 +1,64 @@
 {
-  "name": "hexo-generator-redirect",
-  "version": "1.4.0",
-  "description": "Hexo plugin that generates additional redirect pages",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergeyzwezdin/hexo-generator-redirect.git"
-  },
-  "files": [
-    "index.js",
-    "lib/"
-  ],
-  "keywords": [
-    "hexo",
-    "generator",
-    "redirect"
-  ],
-  "author": "Sergey Zwezdin <sergey@zwezdin.com> (https://zwezdin.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sergeyzwezdin/hexo-generator-redirect/issues"
-  },
-  "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
-  "peerDependencies": {
-    "hexo": "^4.2.0 || ^5.2.0"
-  }
+    "name": "hexo-generator-redirect",
+    "version": "1.4.5",
+    "description": "Hexo plugin that generates additional redirect pages",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sergeyzwezdin/hexo-generator-redirect.git"
+    },
+    "files": [
+        "index.js",
+        "lib/",
+        "postinstall.js",
+        "template/",
+        "!lib/*.txt"
+    ],
+    "keywords": [
+        "hexo",
+        "generator",
+        "redirect"
+    ],
+    "author": "Sergey Zwezdin <sergey@zwezdin.com> (https://zwezdin.com)",
+    "contributors": [
+        {
+            "name": "Dimas Lanjaka",
+            "email": "dimaslanjaka@gmail.com",
+            "url": "https://www.webmanajemen.com"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sergeyzwezdin/hexo-generator-redirect/issues"
+    },
+    "homepage": "https://github.com/sergeyzwezdin/hexo-generator-redirect#readme",
+    "scripts": {
+        "test": "run-s test:**",
+        "pretest": "npm run build",
+        "test:generate": "cd test && npm install && hexo generate --dev",
+        "post-install": "node postinstall.js",
+        "update": "curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/.prettierrc.json > .prettierrc.json && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/postinstall.js > postinstall.js && curl -L https://github.com/dimaslanjaka/nodejs-package-types/raw/main/packer.js > packer.js && npx npm-check-updates -u",
+        "build": "node packer.js --yarn"
+    },
+    "peerDependencies": {
+        "hexo": ">= 4.2.0"
+    },
+    "dependencies": {
+        "ansi-colors": "^4.1.3",
+        "fs-extra": "^11.1.0",
+        "hexo-util": "^3.0.1",
+        "upath": "^2.0.1"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.54.1",
+        "@typescript-eslint/parser": "^5.54.1",
+        "cross-spawn": "https://github.com/dimaslanjaka/node-cross-spawn/tarball/private",
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.7.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "git-command-helper": "^1.1.8",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.8.4"
+    }
 }
