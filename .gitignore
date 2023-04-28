@@ -4,3 +4,7 @@ build
 .yarn/cache
 .yarn/*.gz
 .yarn/version*
+.yarn/patch*
+.yarn/unplug*
+yarn.lock
+package-lock.json
