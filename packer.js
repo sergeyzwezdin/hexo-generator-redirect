@@ -234,7 +234,7 @@ async function addReadMe() {
   /**
    * @type {typeof import('git-command-helper')}
    */
-  const gch = packagejson.name !== 'git-command-helper' ? require('git-command-helper') : require('./dist');
+  const gch = packagejson.name !== 'git-command-helper' ? require('git-command-helper') : require('./dist/src');
 
   const git = new gch.default(__dirname);
   const branch = (await git.getbranch()).filter((o) => o.active)[0].branch;
@@ -300,14 +300,16 @@ async function addReadMe() {
     const dev = raw.rawURL;
     const prod = raw.rawURL.replace('/raw/' + branch, '/raw/' + hash);
     let ver = basename(tarball.relative, '.tgz').replace(`${packagejson.name}-`, '');
-    if (isNaN(parseFloat(ver))) {
-      ver = 'latest';
-      tarballUrl = dev;
-      md += `| ${ver} | ${prod} |\n`;
-    } else {
-      tarballUrl = prod;
+    if (typeof hash === 'string') {
+      if (isNaN(parseFloat(ver))) {
+        ver = 'latest';
+        tarballUrl = dev;
+        md += `| ${ver} | ${prod} |\n`;
+      } else {
+        tarballUrl = prod;
+      }
+      md += `| ${ver} | ${tarballUrl} |\n`;
     }
-    md += `| ${ver} | ${tarballUrl} |\n`;
   }
 
   md += `
