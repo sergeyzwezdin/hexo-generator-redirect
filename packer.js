@@ -234,7 +234,7 @@ async function addReadMe() {
   /**
    * @type {typeof import('git-command-helper')}
    */
-  const gch = packagejson.name !== 'git-command-helper' ? require('git-command-helper') : require('./dist/src');
+  const gch = packagejson.name !== 'git-command-helper' ? require('git-command-helper') : require('./dist');
 
   const git = new gch.default(__dirname);
   const branch = (await git.getbranch()).filter((o) => o.active)[0].branch;
