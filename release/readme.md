@@ -6,9 +6,9 @@
 | 1.4.2 | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/fbf6b0d/release/hexo-generator-redirect-1.4.2.tgz |
 | 1.4.3 | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/9928803/release/hexo-generator-redirect-1.4.3.tgz |
 | 1.4.4 | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/509d953/release/hexo-generator-redirect-1.4.4.tgz |
-| 1.4.5 | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/e47c419/release/hexo-generator-redirect-1.4.5.tgz |
-| latest | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/e47c419/release/hexo-generator-redirect.tgz |
-| latest | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/monorepo/release/hexo-generator-redirect.tgz |
+| 1.4.5 | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/dabd69d/release/hexo-generator-redirect-1.4.5.tgz |
+| latest | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/dabd69d/release/hexo-generator-redirect.tgz |
+| latest | https://github.com/dimaslanjaka/hexo-generator-redirect/raw/pre-release/release/hexo-generator-redirect.tgz |
 
 use this tarball with `resolutions`:
 ```json
