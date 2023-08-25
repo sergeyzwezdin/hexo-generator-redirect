@@ -15,7 +15,7 @@
       "cwd": "${workspaceFolder}/../../site"
     },
     {
-      "command": "hexo clean && hexo s --dev",
+      "command": "hexo clean && hexo s --dev --debug",
       "name": "dev server",
       "request": "launch",
       "type": "node-terminal",
