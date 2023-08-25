@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <link rel="canonical" href="{{ page.redirect_to }}" />
-    <meta http-equiv="refresh" content="0; url='{{ page.redirect_to }}'">
+    <title>{{ page.title or "No Title - {{ config.title }}" }}</title>
+    {% if (page.redirect_to) %}
+      <link rel="canonical" href="{{ page.redirect_to | trim }}" />
+      <meta http-equiv="refresh" content="0; url='{{ page.redirect_to | trim }}'">
+    {% endif %}
   </head>
-  {% set newUrl = typeof page !== 'undefined' && typeof page.target !== 'undefined' && page.target.path ? full_url_for(page.target.path) : typeof page.redirect_to === 'string' ? full_url_for(page.redirect_to) : null %}
+
+  {% set newUrl %}
+    {{ full_url_for(page.target.path) if (page and page.target and page.target.path) }}
+    {{ full_url_for(page.redirect_to) if (page and page.redirect_to) }}
+  {% endset %}
+
   <body>
     <h1>{{ page.title }} Page address was changed</h1>
     <p>
-      The new page address is <a href="{{ newUrl }}" rel="follow dofollow">{{ newUrl }}</a>
+      The new page address is <a href="{{ newUrl | trim }}" rel="follow dofollow">{{ newUrl | trim }}</a>
     </p>
 
     <script type="text/javascript">
       setTimeout(function () {
-        //document.location.href = '{{ newUrl }}';
-        location.replace('{{ newUrl }}');
+        //document.location.href = '{{ newUrl | trim }}';
+        location.replace('{{ newUrl | trim }}');
       }, 3000);
     </script>
   </body>
